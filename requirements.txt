@@ -1,8 +1,6 @@
 streamlit==1.17.0
-#opencv-python-headless==4.5.1.48
-#opencv-python
-opencv-contrib-python==4.5.5.62
-yolov5
+opencv-python-headless==4.5.5.62
+
 gitpython
 ipython  # interactive notebook
 matplotlib>=3.2.2
