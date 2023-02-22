@@ -32,7 +32,7 @@ st.markdown("#### Now you can try to use our detection model by upload image fil
 
 img_file = st.file_uploader("Choose the Jpg file !",type=['png', 'jpeg', 'jpg'])
 if img_file is not None :
-	image = img_file.read()
+	image = Image.open(img_file)
 
 	with open('./tmp/image.jpg', 'wb') as f: 
 		f.write(image)
