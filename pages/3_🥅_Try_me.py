@@ -2,12 +2,13 @@ import streamlit as st
 import io 
 import os
 from PIL import Image
+import torch
 from yolov5 import detect
 import subprocess
 
 st.set_page_config(page_title="Try me 🤩 !")
 st.markdown("# Try me 🤩!")
-
+st.print(torch.__version__)
 st.sidebar.title("About")
 st.sidebar.info(
     """
