@@ -16,6 +16,9 @@ torch
 torchvision
 tqdm>=4.64.0
 
+-f https://data.pyg.org/whl/torch-1.13.0+cpu.html
+torch-scatter
+
 tensorboard>=2.4.1
 pandas>=1.1.4
 seaborn>=0.11.0
