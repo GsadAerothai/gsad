@@ -1,8 +1,6 @@
 import streamlit as st
-import torch
 
 st.set_page_config(page_title="GSAD ",page_icon="👋")
-st.write(torch.__version__)
 st.sidebar.title("About")
 st.sidebar.info(
     """
