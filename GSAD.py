@@ -1,6 +1,9 @@
 import streamlit as st
+import cv2 
+
 
 st.set_page_config(page_title="GSAD ",page_icon="👋")
+st.write(cv2.__version__)
 st.sidebar.title("About")
 st.sidebar.info(
     """
