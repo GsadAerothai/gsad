@@ -8,7 +8,7 @@ import subprocess
 
 st.set_page_config(page_title="Try me 🤩 !")
 st.markdown("# Try me 🤩!")
-st.write(torch.__version__)
+
 st.sidebar.title("About")
 st.sidebar.info(
     """
