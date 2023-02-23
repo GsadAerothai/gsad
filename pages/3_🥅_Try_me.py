@@ -21,7 +21,7 @@ def detect_video():
 
 
 def detect_image():
-	detect.run(weights='./src/weight.pt',img='640',conf='0.5',source='./tmp/image.jpg',project='./tmp/',exist_ok)
+	detect.run(weights='./src/weight.pt',img='640',conf='0.5',source='./tmp/image.jpg',project='./tmp/',exist_ok=True)
 	return Image.open('./tmp/exp/image.jpg')
 	
 st.markdown("#### Now you can try to use our detection model by upload image file.")
