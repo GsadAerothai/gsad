@@ -2,9 +2,7 @@ import streamlit as st
 import io 
 import os
 from PIL import Image
-
 from yolov5 import detect
-import subprocess
 
 st.set_page_config(page_title="Try me 🤩 !")
 st.markdown("# Try me 🤩!")
