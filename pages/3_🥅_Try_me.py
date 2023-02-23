@@ -19,16 +19,11 @@ st.sidebar.info(
 temporary_location = False
 
 def detect_video():
-	#p = subprocess.call(['python','./yolov5/detect.py','--weights','./src/weight.pt','--img','640','--conf','0.5','--source','./tmp/vid.mp4','--project','./tmp/','--exist-ok'])
-		
 	return  open('./tmp/exp/vid.mp4','rb')
 
 
 def detect_image():
-	#!python detect.py --weights best.pt --img 640 --conf 0.50 --source dji480.mp4
-	#p = subprocess.call(['python','./yolov5/detect.py','--weights','./src/weight.pt','--img','640','--conf','0.5','--source','./tmp/image.jpg','--project','./tmp/','--exist-ok'])
 	detect.run(weights='./src/weight.pt',img='640',conf'='0.5',source='./tmp/image.jpg',project='./tmp/',exist_ok)
-
 	return Image.open('./tmp/exp/image.jpg')
 	
 st.markdown("#### Now you can try to use our detection model by upload image file.")
