@@ -3,6 +3,7 @@ import io
 import os
 from PIL import Image
 from yolov5 import detect
+import cv2 
 
 st.set_page_config(page_title="Try me 🤩 !")
 st.markdown("# Try me 🤩!")
@@ -17,7 +18,8 @@ st.sidebar.info(
 temporary_location = False
 
 def detect_video():
-	return  open('./tmp/exp/vid.mp4','rb')
+	detect.run(weights='./src/weight.pt',img=640,conf_thres=0.5,source='./tmp/video.mp4',project='./tmp/',exist_ok=True)
+	return open('./tmp/exp/video.mp4')
 
 
 def detect_image():
